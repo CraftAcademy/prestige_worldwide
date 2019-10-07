@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: prestige_worldwide_development
+
+test:
+  <<: *default
+  database: prestige_worldwide_test
+
+#   production:
+#     url: <%= ENV['DATABASE_URL'] %>
+#
+production:
+  <<: *default
+  database: prestige_worldwide_production
+  username: prestige_worldwide
+  password: <%= ENV['PRESTIGE_WORLDWIDE_DATABASE_PASSWORD'] %>
