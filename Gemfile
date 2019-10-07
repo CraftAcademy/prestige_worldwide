@@ -13,6 +13,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 group :development do
