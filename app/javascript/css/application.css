@@ -10,3 +10,20 @@ a.span{
 body{
   font-family: 'Patrick Hand', cursive;
 }
+#card{
+  margin-left: 40%;
+  margin-top: 5%;
+  width: 20%;
+}
+.main{
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+#titleh1{
+  margin-top: 1%;
+  font-size: 400%;
+}
