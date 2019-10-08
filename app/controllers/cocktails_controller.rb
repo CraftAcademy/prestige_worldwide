@@ -1,7 +1,8 @@
 class CocktailsController < ApplicationController
   def index 
-   response = CocktailService.get_drinks
-   cocktails = JSON.parse(response)
-   cocktails['drinks']
+   @cocktails = CocktailService.get_drinks
+   @cocktails_image = CocktailService.get_drink_image
+
+   
   end
 end

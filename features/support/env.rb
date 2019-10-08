@@ -1,4 +1,5 @@
 require 'cucumber/rails'
+# require 'webmock/cucumber'
 
 ActionController::Base.allow_rescue = false
 

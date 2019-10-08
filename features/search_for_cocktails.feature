@@ -1,7 +1,7 @@
-Feature: List cocktails on landing page
-  As a user
-  When I visit the landing page
-  I'd like to see a list of available drinks
+Feature: Search for cocktails
+  As user
+  In order to know wheter my search was succesful
+  I need to see the name of the returned drink
 
   Scenario: Successfully
     Given I am on the home page
