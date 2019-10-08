@@ -21,6 +21,8 @@ Bundler.require(*Rails.groups)
 
 module PrestigeWorldwide
   class Application < Rails::Application
+    config.load_defaults 6.0
+    
     config.generators do |generate|
       generate.helper false
       generate.assets false
@@ -30,7 +32,6 @@ module PrestigeWorldwide
       generate.controller_specs false
     end
 
-    config.load_defaults 6.0
     config.generators.system_tests = nil
     
   end
