@@ -5,4 +5,4 @@ Feature: List cocktails on landing page
 
   Scenario: Successfully
     Given I am on the home page
-    Then I should see 'Mojito'
+    Then I should see 'Cranberry Cordial'
