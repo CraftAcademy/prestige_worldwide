@@ -5,4 +5,6 @@ Feature: List cocktails on landing page
 
   Scenario: Successfully
     Given I am on the home page
+    And I fill in 'Search by ingredient' with 'Cranberries'
+    And I click 'Search'
     Then I should see 'Cranberry Cordial'
