@@ -4,6 +4,7 @@ require 'json'
 module CocktailService
 
   def self.get_drinks(choice)
+    
     unless choice == nil
       response = RestClient.get(
         "https://www.thecocktaildb.com/api/json/v1/1/filter.php",
@@ -13,9 +14,14 @@ module CocktailService
           }
         }
       )
+
       results = JSON.parse(response)
-      results['drinks']
+      
+      if results == []
+        "error"
+      else
+        results['drinks']
+      end
     end    
   end
-
 end

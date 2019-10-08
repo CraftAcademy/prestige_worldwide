@@ -5,6 +5,8 @@
 
 - if @cocktails.nil?
   %p You need to enter a word
+- elsif @cocktails == "error"
+  %p Oops, there is no cocktail with that ingredient
 - else
   - @cocktails.each do |cocktail|
     %h2= cocktail['strDrink']

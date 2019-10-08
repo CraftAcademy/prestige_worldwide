@@ -13,7 +13,7 @@ end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
-Before '@get_drinks' do
+Before '@get_cocktails' do
 
   # to get the reponse from the api to ur fixture file run:
   # curl "https://api.spoonacular.com/recipes/search?apiKey=your-api-key&number=5&query=cheese" -o features/support/fixtures/api_response_food_get_cheese.txt
