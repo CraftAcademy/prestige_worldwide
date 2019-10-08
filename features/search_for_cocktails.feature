@@ -1,3 +1,4 @@
+@get_drinks
 Feature: Search for cocktails
   As user
   In order to know wheter my search was succesful
@@ -5,6 +6,6 @@ Feature: Search for cocktails
 
   Scenario: Successfully
     Given I am on the home page
-    And I fill in 'Search by ingredient' with 'Cranberries'
-    And I click 'Search'
-    Then I should see 'Cranberry Cordial'
+    And I fill in 'Search' with 'Gin'
+    And I click 'Submit'
+    Then I should see '3-Mile Long Island Iced Tea'
