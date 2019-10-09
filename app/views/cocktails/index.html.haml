@@ -1,12 +1,13 @@
-%h1 Search for your drink of choice: 
-= form_tag(cocktails_path, method: :get) do
-  = text_field_tag(:search, params[:search], placeholder: "Search")
-  = submit_tag ("Submit")
+%div#wrapper
+  %h1 Search for your drink of choice: 
+  = form_tag(cocktails_path, method: :get) do
+    = text_field_tag(:search, params[:search], placeholder: "Search")
+    = submit_tag ("Submit")
 
-- if @cocktails.nil?
-  %p You need to enter a word
-- elsif @cocktails == "error"
-  %p Oops, there is no cocktail with that ingredient
-- else
-  - @cocktails.each do |cocktail|
-    %h2= cocktail['strDrink']
+  - if @cocktails.nil?
+    %p You need to enter a word
+  - elsif @cocktails == "error"
+    %p Oops, there is no cocktail with that ingredient
+  - else
+    - @cocktails.each do |cocktail|
+      %h2= cocktail['strDrink']
