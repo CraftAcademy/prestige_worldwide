@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+a.span{
+  font-size: 200%;
+  margin-left: 20px;
+  color: #59595a;
+}
+body{
+  font-family: 'Patrick Hand', cursive;
+}
+#card{
+  margin-left: 40%;
+  margin-top: 5%;
+  width: 20%;
+}
+.main{
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+#titleh1{
+  margin-top: 1%;
+  font-size: 400%;
+  color: #59595a;
+}
