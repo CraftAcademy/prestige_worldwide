@@ -9,11 +9,15 @@ a.span{
 }
 body{
   font-family: 'Patrick Hand', cursive;
+  color: #59595a;
 }
 #card{
   margin-left: 40%;
   margin-top: 5%;
   width: 20%;
+}
+.font-bold{
+  color: black;
 }
 .main{
   margin: auto;
@@ -23,8 +27,29 @@ body{
   text-align: center;
   position: relative;
 }
+.main.a{
+  margin-left: 45%;
+}
+h2{
+  font-size: 200%;
+  margin-top: 15%;
+}
+input[name="commit"] {
+  background: #bee3f8;
+  border: solid 1px #59595a;
+
+  width: 5%;
+  border-radius: 5px;
+}
 #titleh1{
   margin-top: 1%;
   font-size: 400%;
-  color: #59595a;
+}
+#user_email{
+  border: solid #59595a;
+  border-radius: 10px;
+}
+#user_password{
+  border: solid #59595a;
+  border-radius: 10px;
 }
