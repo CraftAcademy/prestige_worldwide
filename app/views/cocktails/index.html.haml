@@ -1,3 +1,4 @@
+%h1#titleh1 Prestige Worldwide
 %h1 Search for your drink of choice: 
 = form_tag(cocktails_path, method: :get) do
   = text_field_tag(:search, params[:search], placeholder: "Search")
@@ -9,8 +10,6 @@
 - else
   - @cocktails.each do |cocktail|
     %h2= cocktail['strDrink']
-
-%h1#titleh1 Prestige Worldwide
 
 .max-w-sm.rounded.overflow-hidden.shadow-lg#card
   %img.w-full{alt: "Sunset in the mountains", src: "http://fusioncoedsoccer.com/media/bearleague/bl1477363156652.png"}/
