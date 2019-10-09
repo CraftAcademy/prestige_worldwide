@@ -8,4 +8,4 @@ end
 
 Given("I click {string}") do |element|
   click_on element
-end
+end 

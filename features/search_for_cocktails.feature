@@ -15,9 +15,3 @@ Feature: Search for cocktails
     And I fill in 'Search' with 'toesblabla'
     And I click 'Submit'
     Then I should see 'Oops, there is no cocktail with that ingredient'
-
-  Scenario: User searches for multible ingredients
-    Given I am on the home page
-    And I fill in 'Search' with 'Beer, 7-Up, Guinness stout, Root BEer'
-    And I click 'Submit'
-    Then I should see 'Radler'
