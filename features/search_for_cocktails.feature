@@ -1,7 +1,7 @@
 @get_cocktails
 Feature: Search for cocktails
   As user
-  In order to know wheter my search was succesful
+  In order to know whether my search was succesful
   I need to see the name of the returned drink
 
   Scenario: Successfully searches for one ingredient
