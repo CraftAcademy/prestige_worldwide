@@ -5,7 +5,7 @@ Feature: Search for cocktails
   I need to see the name of the returned drink
 
   Background:
-    Given I am on the cocktail page
+    Given I am on the home page
 
   Scenario: Successfully searches for one ingredient
     When I fill in 'Search' with 'Gin'
