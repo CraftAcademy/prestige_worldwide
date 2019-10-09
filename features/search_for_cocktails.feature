@@ -10,8 +10,8 @@ Feature: Search for cocktails
     And I click 'Submit'
     Then I should see '3-Mile Long Island Iced Tea'
 
-  Scenario: User can't search
-    Given I am on the home page
-    And I fill in 'Search' with 'toesblabla'
-    And I click 'Submit'
-    Then I should see 'Oops, there is no cocktail with that ingredient'
+  # Scenario: User can't search
+  #   Given I am on the home page
+  #   And I fill in 'Search' with 'toesblabla'
+  #   And I click 'Submit'
+  #   Then I should see 'Oops, there is no cocktail with that ingredient'
