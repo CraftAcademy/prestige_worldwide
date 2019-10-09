@@ -1,4 +1,4 @@
-Given("I am on the welcome page") do
+Given("I am on the home page") do
   visit root_path
 end
 
