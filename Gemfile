@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+gem 'devise'
 
 group :development, :test do
   gem 'cucumber-rails', require: false

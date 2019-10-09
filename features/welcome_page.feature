@@ -6,5 +6,5 @@ Feature: Visit welcome page
   Scenario: Visiting the welcome page
     Given I am on the welcome page
     Then I should see "Prestige Worldwide"
-    And I should see "Home"
+    And I should see "Don't think, just drink!"
     And I should see "Login"
