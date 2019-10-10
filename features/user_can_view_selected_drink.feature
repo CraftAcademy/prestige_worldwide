@@ -1,5 +1,6 @@
+@get_cocktails
+@show_cocktail
 Feature: User can view selected drink
-
   As a user
   In order to view details of selected drink
   I need the drink’s details to be displayed seperately on its own
