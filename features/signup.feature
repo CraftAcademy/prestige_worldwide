@@ -13,7 +13,7 @@ Feature: Sign up for an account
     And I fill in "Password" with "password"
     And I fill in "Password confirmation" with "password"
     And I click "Sign up"
-    Then I should see "Signed up successfully."
+    Then I should see "Welcome! You have signed up successfully."
 
   Scenario: Unsuccessfully creating an account[Sad Path]
     When I fill in "Email" with ""
