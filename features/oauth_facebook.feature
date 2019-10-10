@@ -6,6 +6,5 @@ Feature: Authenticating on prestige worldwide with facebook.
   Scenario: Visitor clicks on 'login with facebook' and gets authenticated
 	  Given I am on the home page
     When I click "Login"
-	  And I click 'Login with Facebook'
-	  Then I am on the home page
-	  And I should see "Successfully authenticated from Facebook account"
+	  And I click 'Sign in with Facebook'
+	  Then I should see "Successfully authenticated from Facebook account."
