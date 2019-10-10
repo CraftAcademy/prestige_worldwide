@@ -7,6 +7,12 @@ a.span{
   margin-left: 20px;
   color: #59595a;
 }
+
+a:hover {
+  color: purple;
+  font-size: 1.5rem;
+}
+
 body{
   font-family: 'Patrick Hand', cursive;
 }
