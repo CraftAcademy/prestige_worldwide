@@ -12,7 +12,6 @@ Feature: User can view selected drink
     Then I should see '3-Mile Long Island Iced Tea'
 
   Scenario: View selected drink
-    When I click on 'Show'
+    When I click '3-Mile Long Island Iced Tea'
     Then I should see '3-Mile Long Island Iced Tea'
-    And I should see 'Light rum'
     And I should see 'Fill 14oz glass with ice and alcohol.'

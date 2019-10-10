@@ -3,4 +3,5 @@
 - if @cocktail['strInstructions'] == ""
   %p Sorry, there are no instructions for this drink.
 - else
-  - @cocktail['strInstructions']
+  %strong How to:
+  %p= @cocktail['strInstructions']
