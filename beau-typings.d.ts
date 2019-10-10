@@ -1,0 +1,1 @@
+///<reference path='/Users/craftacademy/.vscode/extensions/bespokify.beau-vscode-0.1.44/data/docs/beau.d.ts'/>

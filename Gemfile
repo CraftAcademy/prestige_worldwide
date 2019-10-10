@@ -12,6 +12,8 @@ gem 'tailwindcss', '~> 1.0', '>= 1.0.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'rest-client'
+gem 'haml'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 gem 'devise'
 
@@ -22,6 +24,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'factory_bot_rails'
   gem 'pry-rails'
+  gem 'webmock'
 end
 
 group :development do
