@@ -16,6 +16,7 @@ gem 'rest-client'
 gem 'haml'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 gem 'devise'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'cucumber-rails', require: false
