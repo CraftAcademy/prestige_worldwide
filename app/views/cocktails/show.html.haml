@@ -1,7 +1,12 @@
-%h1= @cocktail["strDrink"]
-
-- if @cocktail['strInstructions'] == ""
-  %p Sorry, there are no instructions for this drink.
-- else
-  %strong How to:
-  %p= @cocktail['strInstructions']
+.card-container
+  %h1.card-title= @cocktail["strDrink"]
+  - if @cocktail['strInstructions'] == ""
+    %p Sorry, there are no instructions for this drink.
+  - else
+    .card-img
+      %img.img-show{src: @cocktail['strDrinkThumb'], alt: "No image to display"}
+    %h2 Ingredients:
+    - @ingredients.each do |ing|
+      %p= ing
+    %h2 How to:
+    %p#p-show= @cocktail['strInstructions']
