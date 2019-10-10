@@ -28,5 +28,5 @@ Feature: Sign up for an account
     And I fill in "Password" with "passw"
     And I fill in "Password confirmation" with "password"
     And I click "Sign up"
-    And I should see "Password is too short (minimum is 6 characters)"
+    Then I should see "Password is too short (minimum is 6 characters)"
     And I should see "Password confirmation doesn't match Password"
