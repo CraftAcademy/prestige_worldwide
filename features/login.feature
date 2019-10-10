@@ -7,7 +7,7 @@ Feature: Login Functionality
     Given the following user exists:
       |email       |password|
       |john@doe.com|password|
-    And I am on the welcome page
+    And I am on the home page
 
     Scenario: User logs in successfully [Happy path]
       When I click "Login"
