@@ -28,3 +28,19 @@ body{
   font-size: 400%;
   color: #59595a;
 }
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 50%;
+  max-height: 3em;
+  margin-bottom: 5px;
+}
+
+.h2img {
+  padding-top: 10px;
+  margin-right: 5px;
+}
