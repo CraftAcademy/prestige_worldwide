@@ -1,0 +1,6 @@
+%h1= @cocktail["strDrink"]
+
+- if @cocktail['strInstructions'] == ""
+  %p Sorry, there are no instructions for this drink.
+- else
+  - @cocktail['strInstructions']

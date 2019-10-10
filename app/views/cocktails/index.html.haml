@@ -9,8 +9,8 @@
   %p Oops, there is no cocktail with that ingredient
 - else
   - @cocktails.each do |cocktail|
-    %h2= cocktail["strDrink"]
-    %h2= link_to cocktail["strDrink"], cocktail_path(cocktail["id"], title: cocktail["strDrink"])
+    -# %h2= cocktail["strDrink"]
+    %h2= link_to cocktail["strDrink"], cocktail_path(cocktail["idDrink"])
 
 .max-w-sm.rounded.overflow-hidden.shadow-lg#card
   %img.w-full{alt: "Sunset in the mountains", src: "http://fusioncoedsoccer.com/media/bearleague/bl1477363156652.png"}/

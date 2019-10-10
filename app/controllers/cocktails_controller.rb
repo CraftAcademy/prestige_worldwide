@@ -4,6 +4,6 @@ class CocktailsController < ApplicationController
   end
 
   def show
-    @cocktails = CocktailService.get_single_drink(params[:id])
+    @cocktail = CocktailService.get_single_drink(params[:id])
   end
 end
