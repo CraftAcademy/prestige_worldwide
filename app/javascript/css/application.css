@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+#alert{
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 125%;
+}
 a.span{
   font-size: 200%;
   margin-left: 20px;
@@ -15,11 +20,15 @@ a:hover {
 
 body{
   font-family: 'Patrick Hand', cursive;
+  color: #59595a;
 }
 #card{
   margin-left: 40%;
   margin-top: 5%;
   width: 20%;
+}
+.font-bold{
+  color: black;
 }
 .main{
   margin: auto;
@@ -28,6 +37,20 @@ body{
   height: 100%;
   text-align: center;
   position: relative;
+}
+.main.a{
+  margin-left: 45%;
+}
+h2{
+  font-size: 200%;
+  margin-top: 15%;
+}
+input[name="commit"] {
+  background: #bee3f8;
+  border: solid 1px #59595a;
+  margin-top: 10px;
+  width: 5%;
+  border-radius: 5px;
 }
 #titleh1{
   margin-top: 1%;
@@ -84,4 +107,19 @@ body{
 
 h2 {
   font-size: 2rem;
+}
+#user_email{
+  border: solid #59595a;
+  border-radius: 10px;
+  text-align: center;
+}
+#user_password{
+  border: solid #59595a;
+  border-radius: 10px;
+  text-align: center;
+}
+#user_password_confirmation{
+  border: solid #59595a;
+  border-radius: 10px;
+  text-align: center;
 }
