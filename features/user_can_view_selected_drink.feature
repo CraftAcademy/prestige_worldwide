@@ -9,7 +9,6 @@ Feature: User can view selected drink
     Given I am on the home page
     And I fill in 'Search' with 'Gin'
     And I click 'Submit'
-    Then I should see '3-Mile Long Island Iced Tea'
 
   Scenario: View selected drink
     When I click '3-Mile Long Island Iced Tea'

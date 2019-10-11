@@ -1,17 +1,18 @@
-%h1#titleh1 Prestige Worldwide
-%h1 Search for your drink of choice: 
-= form_tag(cocktails_path, method: :get) do
-  = text_field_tag(:search, params[:search], placeholder: "Search")
-  = submit_tag ("Submit")
-- if @cocktails.nil?
-  %p You need to enter a word
-- elsif @cocktails == "error"
-  %p Oops, there is no cocktail with that ingredient
-- else
-  - @cocktails.each do |cocktail|
-    .imgDiv
-      %h2.h2img= link_to cocktail["strDrink"], cocktail_path(cocktail["idDrink"])
-      %img.img{src: cocktail["strDrinkThumb"]}
+.mainDiv 
+  %h1#titleh1 Prestige Worldwide
+  %h1 Search for your drink of choice: 
+  = form_tag(cocktails_path, method: :get) do
+    = text_field_tag(:search, params[:search], placeholder: "Search")
+    = submit_tag ("Submit")
+  - if @cocktails.nil?
+    %p You need to enter a word
+  - elsif @cocktails == "error"
+    %p Oops, there is no cocktail with that ingredient
+  - else
+    - @cocktails.each do |cocktail|
+      .imgDiv
+        %h2.h2img= link_to cocktail["strDrink"], cocktail_path(cocktail["idDrink"])
+        %img.img{src: cocktail["strDrinkThumb"]}
 
 .max-w-sm.rounded.overflow-hidden.shadow-lg#card
   %img.w-full{alt: "Sunset in the mountains", src: "http://fusioncoedsoccer.com/media/bearleague/bl1477363156652.png"}/
