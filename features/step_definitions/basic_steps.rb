@@ -15,3 +15,8 @@ Given("the following user exists:") do |table|
     FactoryBot.create(:user, user)
   end
 end
+
+When("I click on {string} for {string}") do |button_text, user_email|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
