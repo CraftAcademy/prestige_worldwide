@@ -1,5 +1,7 @@
-.main
+.mainDiv
   %h1#titleh1 Prestige Worldwide
+  .px-6.py-4
+    .font-bold.text-xl.mb-2 Don't think, just drink!
   %h1 Search for your drink of choice: 
   = form_tag(cocktails_path, method: :get) do
     = text_field_tag(:search, params[:search], placeholder: "Search")
@@ -10,12 +12,14 @@
     %p Oops, there is no cocktail with that ingredient
   - else
     - @cocktails.each do |cocktail|
-      %h2= cocktail['strDrink']
-
-  .max-w-sm.rounded.overflow-hidden.shadow-lg#card
-    %img.w-full{alt: "Sunset in the mountains", src: "http://fusioncoedsoccer.com/media/bearleague/bl1477363156652.png"}/
-    .px-6.py-4
-      .font-bold.text-xl.mb-2 Don't think, just drink!
-      %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-900.mr-2 #cocktails
-      %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-900.mr-2 #good-vibes
-      %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-900 #problems
+      .imgDiv
+        %h2.h2img= link_to cocktail["strDrink"], cocktail_path(cocktail["idDrink"])
+        %img.img{src: cocktail["strDrinkThumb"]}
+.max-w-sm.rounded.overflow-hidden.shadow-lg#card
+  %img.w-full{alt: "Sunset in the mountains", src: "http://fusioncoedsoccer.com/media/bearleague/bl1477363156652.png"}/
+ 
+  %p.text-gray-700.text-base
+  .px-6.py-4
+    %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700.mr-2 #cocktails
+    %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700.mr-2 #good-vibes
+    %span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700 #problems

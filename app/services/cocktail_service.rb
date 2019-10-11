@@ -22,4 +22,20 @@ module CocktailService
       end
     end    
   end
+
+  def self.get_single_drink(id)
+    
+    response = RestClient.get(
+      "https://www.thecocktaildb.com/api/json/v1/1/lookup.php",
+      {
+        params: {
+          i: id.to_i
+        }
+      }
+    )
+
+    results = JSON.parse(response)
+    
+    results['drinks'].first
+  end
 end
