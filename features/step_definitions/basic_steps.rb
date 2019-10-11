@@ -17,6 +17,9 @@ Given("the following user exists:") do |table|
 end
 
 When("I click on {string} for {string}") do |button_text, user_email|
-  pending # Write code here that turns the phrase above into concrete actions
+  course = Course.find_by_title course_title
+  within("#course_#{course.id}") do 
+    click_on button_text
+  end
 end
 
