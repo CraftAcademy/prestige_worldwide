@@ -1,4 +1,7 @@
 Devise.setup do |config|
+  config.omniauth :facebook,
+    Rails.application.credentials.facebook[:app_id],
+    Rails.application.credentials.facebook[:app_secret]
 
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
