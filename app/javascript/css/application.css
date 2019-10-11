@@ -59,13 +59,15 @@ body{
 
 .card-container {
   text-align: center;
+  max-width: 25em;
   position: absolute;
-  max-width: 50vw;
+  left: 50%;
+  transform: translate(-50%);
   border-radius: 2px;
   box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
   overflow: hidden;
   background: rgba(255, 255, 255, 0.911);
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .card-title {
@@ -77,6 +79,7 @@ body{
 
 .img-show {
   width: 100%;
+  border-radius: 5px;
 }
 
 .card-img {
@@ -84,7 +87,7 @@ body{
 }
 
 #p-show {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 h2 {
