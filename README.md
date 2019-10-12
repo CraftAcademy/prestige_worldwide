@@ -10,7 +10,7 @@
 **Front End:** Rails, Tailwind, CSS  
 **Back End:** Rails  
 **Testing frameworks:** Cucumber, RSpec  
-**Deployed at:** - 
+**Deployed at:** -  
 **Project Management Tool:** [Pivotal tracker for our team](https://www.pivotaltracker.com/n/projects/2401272)
 
 ## The code   
