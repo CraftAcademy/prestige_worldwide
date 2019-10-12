@@ -13,7 +13,7 @@ require("channels")
     cardExpiry.mount('#card-expiry')
     cardCVC.mount('#card-cvc')
 
-    stripeForm. addEventListener('submit', () => {
+    stripeForm.addEventListener('submit', () => {
       event.preventDefault()
       stripe.createToken(cardNumber, cardExpiry, cardCVC).then((result) => {
         const hiddenField = document.createElement('input')

@@ -7,16 +7,28 @@ Then("I should be on a purchase page") do
 end
 
 Then("I fill in the Stripe field {string} with {string}") do |input_field, value|
-  stripe_frame = find("iframe[name='__privateStripeFrame5']")
   case input_field
-  when "CC Number"
-     field = 'cardnumber'
+    when "CC Number"
+      frame_name = '#card-number div iframe'
+      field_name = 'cardnumber'
+    when "Expiry date"
+      frame_name = '#card-expiry div iframe'
+      field_name = 'exp-date'
+    when "CVC"
+      frame_name = '#card-cvc div iframe'
+      field_name = 'cvc'
   end
-  within_frame(stripe_frame) do
-    find(field).send_keys(value)
+
+  stripe_frame = find(frame_name)
+  within_frame stripe_frame do 
+    page.driver.browser.find_element(name: field_name).send_keys(value)
   end
 end
 
 Then("I submit the Stripe form") do
   pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("STOP") do
+  binding.pry
 end

@@ -33,6 +33,9 @@ module PrestigeWorldwide
     end
 
     config.generators.system_tests = nil
-    
+    # config.stripe.published_key = Rails.application.credentials.stripe[:published_key]
+    # config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
   end
 end
+
+

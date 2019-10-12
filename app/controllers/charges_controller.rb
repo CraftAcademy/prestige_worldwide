@@ -4,11 +4,12 @@ class ChargesController < ApplicationController
   end
 
   def create
-    membership = Membership.find params[:membership_id]
+    binding.pry
+    membership = Membership.find(params[:user_id])
 
     user = Stripe::Customer.create(
-      email: params[:email]
-      source: params['stripeToken']
+      email: params[:email],
+      source: params['stripeToken'],
       description: "Member: #{params[:email]}"
     )
 
@@ -24,5 +25,11 @@ class ChargesController < ApplicationController
     else
       redirect_to root_path, notice: "I guess you'll always be a loser"
     end
+  end
+
+  Private
+
+  def get_token(params)
+    Rails.env.test? ? StripeMock.create_test_helper.generate_card_token : params[:stripeToken]
   end
 end

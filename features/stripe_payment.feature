@@ -12,6 +12,7 @@ Feature: Paying to use cocktails worldwide
 
   @javascript
   Scenario: Visitor creates an account and buys access
+  Then STOP
     When I click "PAY!!"
     Then I should be on a purchase page
     And I fill in the Stripe field "CC number" with "4242424242424242"
