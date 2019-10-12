@@ -17,6 +17,7 @@ gem 'haml'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 gem 'devise'
 
+
 group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
@@ -25,6 +26,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
+  gem 'selenium-webdriver'
+  gem 'webdrivers', '~> 4.0'
 end
 
 group :development do

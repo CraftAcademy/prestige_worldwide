@@ -10,6 +10,7 @@ Feature: Paying to use cocktails worldwide
     And I am logged in as "john@doe.com"
     And I am on the home page
 
+  @javascript
   Scenario: Visitor creates an account and buys access
     When I click "PAY!!"
     Then I should be on a purchase page
