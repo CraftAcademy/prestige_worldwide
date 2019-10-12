@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   validates_presence_of :email
 
-  has_one :usermembership
+  has_one :membership
 end
