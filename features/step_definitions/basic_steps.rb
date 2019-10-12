@@ -21,3 +21,6 @@ Given("I am logged in as {string}") do |string|
   login_as(user, scope: :user)
 end
 
+Then("I wait {int} seconds") do |time|
+  sleep(time)
+end
