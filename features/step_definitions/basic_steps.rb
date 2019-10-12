@@ -16,10 +16,8 @@ Given("the following user exists:") do |table|
   end
 end
 
-When("I click on {string} for {string}") do |button_text, user_email|
-  user = User.find_by_email user_email
-  within("#user_#{user.id}") do 
-    click_on button_text
-  end
+Given("I am logged in as {string}") do |string|
+  user = User.find_by(email: string)
+  login_as(user, scope: :user)
 end
 

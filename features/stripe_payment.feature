@@ -7,10 +7,11 @@ Feature: Paying to use cocktails worldwide
     Given the following user exists:
       | email        | password |
       | john@doe.com | password |
+    And I am logged in as "john@doe.com"
     And I am on the home page
 
   Scenario: Visitor creates an account and buys access
-    When I click on "Buy" for "john@doe.com"
+    When I click "PAY!!"
     Then I should be on a purchase page
     And I fill in the Stripe field "CC number" with "4242424242424242"
     And I fill in the Stripe field "Expiry date" with "12/23"

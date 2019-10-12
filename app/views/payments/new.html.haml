@@ -1,2 +1,10 @@
-%h1 Payments#new
-%p Find me in app/views/payments/new.html.haml
+%h1
+  Payment form for #{@membership.title}
+
+= form_with url: payments_path, local_ true, method: :post, id: :payments_form do |form|
+  = form.hidden_field :course_id, value: @membership.id
+  = form.text_field :email
+  #card-number
+  #card-expiry
+  #card-cvc
+  = form.submit 'Submit Payment'
