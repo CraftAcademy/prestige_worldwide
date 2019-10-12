@@ -7,7 +7,7 @@
 [Miyesier Kaerman](#)  
 [Laetitia Vettese Ursescu](#)
 ## Built with  
-**Front End:** Rails, Tailwind, CSS  
+**Front End:** Rails, Javascript, Tailwind, CSS  
 **Back End:** Rails  
 **Testing frameworks:** Cucumber, RSpec  
 **Deployed at:** -  
