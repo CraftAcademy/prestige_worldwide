@@ -1,7 +1,7 @@
 # The Mid-course Project (RESTful APIs)
 ### Authors  
 [Clarissa Liljander](https://github.com/clalil)   
-[Sverrir Steindorsson](#) 
+[Sverrir Steindorsson](#)  
 [Luca Lobacher](#)  
 [David Izosimov](https://github.com/DavveDavve)  
 [Miyesier Kaerman](#)  
