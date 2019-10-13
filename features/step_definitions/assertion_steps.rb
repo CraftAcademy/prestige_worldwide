@@ -26,7 +26,7 @@ Then("I fill in the Stripe field {string} with {string}") do |input_field, value
 end
 
 Then("I submit the Stripe form") do
-  pending # Write code here that turns the phrase above into concrete actions
+  click_on "Submit Payment"
 end
 
 Then("STOP") do

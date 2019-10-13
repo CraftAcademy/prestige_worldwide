@@ -9,20 +9,20 @@ class ChargesController < ApplicationController
 
   def create
     membership = Membership.find(params[:user_id])
-
+    binding.pry
     user = Stripe::Customer.create(
       email: params[:email],
-      source: params['stripeToken'],
+      source: get_token(params),#params['stripeToken'],
       description: "Member: #{params[:email]}"
     )
-
+    binding.pry
     charge = Stripe::Charge.create(
       user: user.id,
       amount: 200 * 100,
       currency: 'usd',
       description: "Purchase of #{membership.title}"
     )
-
+    binding.pry
     if charge[:paid]
       redirect_to root_path, notice: "Well done, you are moving up in life!"
     else

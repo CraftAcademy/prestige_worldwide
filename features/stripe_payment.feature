@@ -19,5 +19,7 @@ Feature: Paying to use cocktails worldwide
     And I fill in the Stripe field "CC Number" with "4242424242424242"
     And I fill in the Stripe field "Expiry date" with "12/23"
     And I fill in the Stripe field "CVC" with "123"
+    And STOP
     And I submit the Stripe form
-    Then I should see "Thank you! You can now use cocktails worldwide."
+    And STOP
+    Then I should see "Well done, you are moving up in life!"
