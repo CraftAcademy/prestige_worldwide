@@ -1,5 +1,5 @@
 %h1
-  Payment form for #{@membership.title}
+  -#Payment form for #{@membership.title}
 
 = form_with url: charges_path, local: true, method: :post, id: :charge_form do |form|
   = form.hidden_field :course_id, value: @membership.id

@@ -11,7 +11,7 @@ rescue NameError
   raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
 end
 
-Webdrivers::Chromedriver.required_version = 2.44
+Webdrivers::Chromedriver.required_version = '2.44'
 chrome_options = %w[headless
                     no-sandbox
                     disable-popup-blocking

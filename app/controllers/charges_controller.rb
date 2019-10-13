@@ -1,10 +1,13 @@
 class ChargesController < ApplicationController
   def new
-    @membership = Membership.find(params[:id])
+    if params.has_key? :id
+      @membership = Membership.find(params[:id])
+    else
+      @membership = Membership.create
+    end
   end
 
   def create
-    binding.pry
     membership = Membership.find(params[:user_id])
 
     user = Stripe::Customer.create(
@@ -27,7 +30,7 @@ class ChargesController < ApplicationController
     end
   end
 
-  Private
+  private
 
   def get_token(params)
     Rails.env.test? ? StripeMock.create_test_helper.generate_card_token : params[:stripeToken]
