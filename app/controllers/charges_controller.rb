@@ -3,7 +3,8 @@ class ChargesController < ApplicationController
     if params.has_key? :id
       @membership = Membership.find(params[:id])
     else
-      @membership = create
+      @membership = Membership.create
+                    #create
     end
   end
 
@@ -11,7 +12,7 @@ class ChargesController < ApplicationController
     
     user = Stripe::Customer.create(
       email: params[:email],
-      source: get_token(params),#params['stripeToken'],
+      source: params['stripeToken'],
       description: "Member: #{params[:email]}"
     )
     
@@ -23,8 +24,7 @@ class ChargesController < ApplicationController
     )
     
     if charge[:paid]
-      @membership = Membership.create
-
+      #@membership = Membership.create
       redirect_to root_path, notice: "Well done, you are moving up in life!"
     else
       redirect_to root_path, notice: "I guess you'll always be a loser"
