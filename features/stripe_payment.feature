@@ -12,10 +12,10 @@ Feature: Paying to use cocktails worldwide
 
   @javascript
   Scenario: Visitor creates an account and buys access
-  Then STOP
     When I click "PAY!!"
     Then I should be on a purchase page
     And I wait 3 seconds
+    And I fill in "Email" with "john@doe.com"
     And I fill in the Stripe field "CC number" with "4242424242424242"
     And I fill in the Stripe field "Expiry date" with "12/23"
     And I fill in the Stripe field "CVC" with "123"
