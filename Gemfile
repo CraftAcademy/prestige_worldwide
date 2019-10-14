@@ -16,6 +16,8 @@ gem 'rest-client'
 gem 'haml'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 gem 'devise'
+gem 'stripe-rails'
+
 
 group :development, :test do
   gem 'cucumber-rails', require: false
@@ -25,6 +27,9 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
+  gem 'selenium-webdriver'
+  gem 'webdrivers', '~> 4.0'
+  gem 'stripe-ruby-mock', '~> 2.5.8', require: 'stripe_mock'
 end
 
 group :development do

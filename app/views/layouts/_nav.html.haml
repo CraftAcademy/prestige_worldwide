@@ -13,6 +13,8 @@
         Favourites
     %div
       - if user_signed_in?
-        %a.inline-block.text-sm.px-6.py-4.leading-none.rounded.border.text-#59595a.border-blue-300.hover:border-transparent.hover:text-#59595a-500.hover:bg-white.mt-4.lg:mt-0{href: destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?'} } Logout      
+        %a.inline-block.text-sm.px-6.py-4.leading-none.rounded.border.text-#59595a.border-blue-300.hover:border-transparent.hover:text-#59595a-500.hover:bg-white.mt-4.lg:mt-0{href: new_charge_path } PAY!!
+        %a.inline-block.text-sm.px-6.py-4.leading-none.rounded.border.text-#59595a.border-blue-300.hover:border-transparent.hover:text-#59595a-500.hover:bg-white.mt-4.lg:mt-0{href: destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?'} } Logout     
       - else
         %a.active.inline-block.text-sm.px-6.py-4.leading-none.rounded.border.text-#59595a.border-blue-300.hover:border-transparent.hover:text-#59595a-500.hover:bg-white.mt-4.lg:mt-0{href: new_user_session_path } Login
+    

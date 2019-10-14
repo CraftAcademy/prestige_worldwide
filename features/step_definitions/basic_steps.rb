@@ -15,3 +15,12 @@ Given("the following user exists:") do |table|
     FactoryBot.create(:user, user)
   end
 end
+
+Given("I am logged in as {string}") do |string|
+  user = User.find_by(email: string)
+  login_as(user, scope: :user)
+end
+
+Then("I wait {int} seconds") do |time|
+  sleep(time)
+end
